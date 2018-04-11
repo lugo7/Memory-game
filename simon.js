@@ -85,29 +85,3 @@ function reply(clssName){ //returns the class of the clicked game button.
   replyClick(clssName,userAnswer); //pass arguments to other function
   main(blnkOrdr);
 }
-
-////////////////////////////////////////////////////////////////////////////////
-var Game = {
-  blnkOrdr = [],
-  newOrder = [],
-  gameOver = false,
-  round = 0,
-
-  init: function(){
-    let that = this;
-    document.getElementById("startButton").addEventListener('click', function(){ //on start
-      that.startGame();
-    });
-  },
-  startGame: function(){
-    this.blnkOrdr = [];
-    this.newOrder = [];
-    this.gameOver = false;
-    this.round = 0;
-    startRound();
-  },
-  startRound: function(){
-    document.getElementById('score').innerHTML(this.round);
-
-  }
-}
