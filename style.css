@@ -129,13 +129,13 @@ p[data-action="lose"] {
     width: 500px;
 }
 
-#pointsHeader{
+#roundHeader{
 	font-weight: bold;
 	float: right;
 	padding-right: 1em;
 }
 
-#score{
+#round{
 	float: right;
 	padding-right: 2em;
 	clear: both;
