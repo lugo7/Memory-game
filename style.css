@@ -41,7 +41,7 @@ p[data-action="lose"] {
 }
 
 .simon {
-	background: #fff;
+	background: #ccc;
 	position: relative;
 	float: left;
 	margin-right: 3em;
@@ -55,7 +55,7 @@ p[data-action="lose"] {
     box-shadow: 2px 1px 12px #aaa;
 }
 
-.red, .blue, .yellow, .green {
+#red, #blue, #yellow, #green {
 	opacity: 0.6;
 	height: 290px;
 	-webkit-border-radius: 150px 150px 150px 150px;
@@ -64,29 +64,29 @@ p[data-action="lose"] {
 	text-indent: 10000px;
 }
 
-.red:hover, .blue:hover, .yellow:hover, .green:hover {
+#red:hover, #blue:hover, #yellow:hover, #green:hover {
 	border: 2px solid black
 }
 
-.red {
+#red {
 	background: #FF5643;
 	clip: rect(0px, 300px, 150px, 150px);
 	width: 296px;
 }
 
-.blue {
+#blue {
 	background: dodgerblue;
 	clip: rect(0px, 150px, 150px, 0px);
 	width: 300px;
 }
 
-.yellow {
+#yellow {
 	background: #FEEF33;
 	clip: rect(150px, 150px, 300px, 0px);
 	width: 300px;
 }
 
-.green {
+#green {
 	background: #BEDE15;
 	clip: rect(150px,300px, 300px, 150px);
 	width: 296px;
@@ -124,9 +124,18 @@ p[data-action="lose"] {
 	cursor: pointer;
 }
 
+.dissapear {
+  box-shadow: 0 0 50px white;
+  filter: brightness(250%);
+}
+
 #container{
     margin: 0 auto;
     width: 500px;
+}
+
+#roundDisplay{
+	float:left;
 }
 
 #roundHeader{
@@ -138,11 +147,6 @@ p[data-action="lose"] {
 #round{
 	float: right;
 	padding-right: 2em;
-	clear: both;
-}
-
-#startButton{
-	float: right;
 	clear: both;
 }
 

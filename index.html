@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <title>Simon Says</title>
@@ -9,18 +9,22 @@
   </head>
   <body>
     <div id="container">
-      <h1>Simon Says</h1>
+      <header>
+        <div id="roundDisplay">
+          <p id="roundHeader">Round</p>
+          <p id="round">0</p>
+        </div>
+      </header>
+      <h1>Press the Enter Key to start</h1>
       <div id="game">
         <ul>
-          <li class="green" data-tile="1"></li>
-          <li class="red" data-tile="2"></li>
-          <li class="blue" data-tile="3"></li>
-          <li class="yellow" data-tile="4"></li>
+          <li id="green" class="gameButton" data-tile="0"></li>
+          <li id="red" class="gameButton" data-tile="1"></li>
+          <li id="blue" class="gameButton" data-tile="2"></li>
+          <li id="yellow" class="gameButton" data-tile="3"></li>
       </div>
-      <p id="roundHeader">Round</p>
-      <p id="round">0</p>
-      <button id="startButton">Play</button>
     </div>
-    <script src="simonClass.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="logic.js"></script>
   </body>
 </html>
