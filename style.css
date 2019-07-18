@@ -6,9 +6,25 @@ body {
 	-ms-user-select: none; /* IE10+ */
 	-o-user-select: none;
 	user-select: none;
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	background: red;
+	height: 100px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
 }
 
 h1 {
+	text-align: center;
+	margin: 0 auto;
+	clear: both;
+}
+
+h2{
 	margin: 1em 0 2em;
 	text-align: center;
 }
@@ -26,6 +42,36 @@ p[data-action="lose"] {
 	display: none;
 }
 
+.fixedWidth{
+	min-width: 1100px;
+	margin: 0 auto;
+}
+
+#container{
+    margin: 0 auto;
+		padding: 1rem;
+}
+
+#roundDisplay{
+	background: blue;
+	max-width: 5rem;
+	clear: right;
+	padding: .5rem;
+	text-align: center;
+}
+
+#roundHeader{
+	font-weight: bold;
+	padding-right: 1em;
+	text-align: center;
+}
+
+#round{
+	padding-right: 2em;
+	text-align: center;
+	text-align: center;
+}
+
 .active {
 	opacity: 1 !important;
 }
@@ -40,10 +86,11 @@ p[data-action="lose"] {
 	margin: 0 auto;
 }
 
-.simon {
+.game {
 	background: #ccc;
 	position: relative;
 	float: left;
+	margin: 0 auto;
 	margin-right: 3em;
 	width: 302px;
 	height: 295px;
@@ -127,27 +174,6 @@ p[data-action="lose"] {
 .dissapear {
   box-shadow: 0 0 50px white;
   filter: brightness(250%);
-}
-
-#container{
-    margin: 0 auto;
-    width: 500px;
-}
-
-#roundDisplay{
-	float:left;
-}
-
-#roundHeader{
-	font-weight: bold;
-	float: right;
-	padding-right: 1em;
-}
-
-#round{
-	float: right;
-	padding-right: 2em;
-	clear: both;
 }
 
 footer {
