@@ -1,33 +1,48 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Simon Says Clone</title>
+    <title>Memory Game</title>
     <meta charset="utf-8" />
     <meta http-epuiv="Content-type" content="text/html" "charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
   </head>
   <body>
+    <header>
+      <h1>Memory Game</h1>
+      <div id="icons">stuff</div>
+    </header>
     <div id="container">
-      <header>
-        <div id="roundDisplay">
-          <p id="roundHeader">Round</p>
-          <p id="round">0</p>
+      <div class="center">
+        <div id="gameArea">
+          <div class="column">
+            <div class="display">
+              <p class="title">Round:</p>
+              <p class="number">0</p>
+            </div>
+            <div class="gameButton" id="green" data-tile="0"></div>
+            <div class="gameButton" id="red" data-tile="1"></div>
+          </div>
+          <div class="column">
+            <div class="display">
+              <p class="title">Score:</p>
+              <p class="number">0</p>
+            </div>
+            <div class="gameButton" id="blue" data-tile="2"></div>
+            <div class="gameButton" id="yellow" data-tile="3"></div>
+          </div>
         </div>
-        <h1>Simon Says Clone</h1>
-      </header>
-      <div class='fixedWidth'>
-        <h2>Press the Enter Key to start</h2>
-        <div id="game">
-          <ul>
-            <li id="green" class="gameButton" data-tile="0"></li>
-            <li id="red" class="gameButton" data-tile="1"></li>
-            <li id="blue" class="gameButton" data-tile="2"></li>
-            <li id="yellow" class="gameButton" data-tile="3"></li>
-        </div>
+      </div>
+      <div id="abilities">
+        <p>Abilites</p>
+        <ul>
+          <li>Replay Sound</li>
+          <li>Replay Lights</li>
+          <li>Replay slower</li>
+        </ul>
       </div>
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="logic.js"></script>
+    <!--<script src="logic.js"></script>-->
   </body>
 </html>
