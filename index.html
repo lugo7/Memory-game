@@ -10,36 +10,41 @@
   <body>
     <header>
       <h1>Memory Game</h1>
-      <div id="icons">stuff</div>
+      <div id="icons">
+        <img src="images/scorecard-24.png" />
+        <img src="images/settings-960.svg" width="24" height="24"/>
+      </div>
     </header>
     <div id="container">
       <div class="center">
         <div id="gameArea">
           <div class="column">
             <div class="display">
-              <p class="title">Round:</p>
+              <p class="title">Round: </p>
               <p class="number">0</p>
             </div>
-            <div class="gameButton" id="green" data-tile="0"></div>
-            <div class="gameButton" id="red" data-tile="1"></div>
+            <div class="gameButton green" data-tile="0"></div>
+            <div class="gameButton red" data-tile="1"></div>
           </div>
           <div class="column">
             <div class="display">
-              <p class="title">Score:</p>
+              <p class="title">Score: </p>
               <p class="number">0</p>
             </div>
-            <div class="gameButton" id="blue" data-tile="2"></div>
-            <div class="gameButton" id="yellow" data-tile="3"></div>
+            <div class="gameButton blue" data-tile="2"></div>
+            <div class="gameButton yellow" data-tile="3"></div>
           </div>
         </div>
       </div>
       <div id="abilities">
-        <p>Abilites</p>
-        <ul>
-          <li>Replay Sound</li>
-          <li>Replay Lights</li>
-          <li>Replay slower</li>
-        </ul>
+        <div>
+          <p>Abilites</p>
+          <ul>
+            <li>Replay Sound</li>
+            <li>Replay Lights</li>
+            <li>Replay slower</li>
+          </ul>
+        </div>
       </div>
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

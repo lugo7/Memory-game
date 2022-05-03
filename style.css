@@ -5,20 +5,22 @@
 
 body {
 	font-family: Arial, serif;
-	color: #333;
 	-webkit-user-select: none; /* Chrome/Safari */
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* IE10+ */
 	-o-user-select: none;
 	user-select: none;
+	color:#4B6A88;
+	background: #dbdbdb;
 }
 
 header{
-	background: #cccccc;
+	background:#40423d;
 	height: 2.5em;
 	display: flex;
 	padding-top: 5px;
 	padding-left: 7px;
+	color: #def;
 }
 
 h1 {
@@ -33,8 +35,14 @@ h1 {
 	margin-right: 20px;
 }
 
-p[data-action="lose"] {
-	display: none;
+#icons > img{
+	padding-top: 5px;
+	padding-left: 15px;
+	filter: invert(91%) sepia(43%) saturate(3091%) hue-rotate(177deg) brightness(106%) contrast(101%);
+}
+
+#icons > img:hover{
+	cursor: pointer;
 }
 
 #container{
@@ -47,23 +55,36 @@ p[data-action="lose"] {
 }
 
 .center{
-	width: 70%;
+	width: 60%;
 }
 
 #abilities{
-	padding: 80px;
+	padding-top:80px;
 	flex-grow: 1;
 }
 
-#abilities > p{
-	margin-bottom: 15px;
-	padding-left: 15px;
+#abilities > div{
+	padding-left: 40px;
+	width: 25%;
+	border: 1px solid #222;
+	margin: 0;
+	font-size: 1.5em;
+}
+
+#abilities p{
+	margin-bottom:15px;
+	padding-left:15px;
 	font-weight: bold;
 	text-decoration: underline;
 }
 
 #abilities li{
-	margin-bottom: 15px;
+	margin-bottom: 30px;
+}
+
+#abilities li:hover{
+	text-decoration: underline;
+	cursor: pointer;
 }
 
 .column{
@@ -78,6 +99,7 @@ p[data-action="lose"] {
 
 .display{
 	display: flex;
+	margin-top:20px;
 }
 
 .title{
@@ -94,27 +116,44 @@ p[data-action="lose"] {
 .gameButton{
 	height:350px;
 	width:350px;
-	opacity: 0.6;
+	opacity: .8;
+	border: 2px solid transparent;
 }
 
-#red:hover, #blue:hover, #yellow:hover, #green:hover {
-	border: 2px solid black
+.red:hover, .blue:hover, .yellow:hover, .green:hover {
+	border: 2px solid black;
 }
 
-#red {
-	background: #FF5643;
+.red {
+	background: #D50209;
 }
 
-#blue {
-	background: dodgerblue;
+.activeRed{
+	background: #FD0D15;
 }
 
-#yellow {
-	background: #FEEF33;
+.blue {
+	background: #0000CC;
 }
 
-#green {
-	background: #BEDE15;
+.activeBlue{
+	background:#0000FF;
+}
+
+.yellow {
+	background: #D3C112;
+}
+
+.activeYellow{
+	background: #EDDC2B;
+}
+
+.green {
+	background: #006700;
+}
+
+.activeGreen{
+	background: #009A00;
 }
 
 .dissapear {
