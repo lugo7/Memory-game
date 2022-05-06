@@ -16,38 +16,35 @@
       </div>
     </header>
     <div id="container">
-      <div class="center">
+      <div id="abilities">
+        <div>
+          <p>Round: 0</p>
+          <p>Abilites</p>
+          <p>Score: 0</p>
+        </div>
+        <div>
+          <ul>
+            <li>Replay Sound <span>(1)</span></li>
+            <li>Replay Lights <span>(1)</span></li>
+            <li>Replay slower <span>(1)</span></li>
+          </ul>
+        </div>
+      </div>
         <div id="gameArea">
           <div class="column">
-            <div class="display">
-              <p class="title">Round: </p>
-              <p class="number">0</p>
-            </div>
             <div class="gameButton green" data-tile="0"></div>
             <div class="gameButton red" data-tile="1"></div>
           </div>
           <div class="column">
-            <div class="display">
-              <p class="title">Score: </p>
-              <p class="number">0</p>
-            </div>
             <div class="gameButton blue" data-tile="2"></div>
             <div class="gameButton yellow" data-tile="3"></div>
           </div>
+          <div class="overlay">
+            <button>Start Game</button>
+          </div>
         </div>
-      </div>
-      <div id="abilities">
-        <div>
-          <p>Abilites</p>
-          <ul>
-            <li>Replay Sound</li>
-            <li>Replay Lights</li>
-            <li>Replay slower</li>
-          </ul>
-        </div>
-      </div>
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!--<script src="logic.js"></script>-->
+    <script src="logic.js"></script>
   </body>
 </html>

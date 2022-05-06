@@ -19,7 +19,7 @@ header{
 	height: 2.5em;
 	display: flex;
 	padding-top: 5px;
-	padding-left: 7px;
+	padding-left: 20px;
 	color: #def;
 }
 
@@ -47,39 +47,45 @@ h1 {
 
 #container{
 	display: flex;
+	flex-flow: column;
 }
 
 #gameArea{
 	display: flex;
-	width: 780px;
-}
-
-.center{
-	width: 60%;
+	width: 750px;
 }
 
 #abilities{
-	padding-top:80px;
-	flex-grow: 1;
+	width: 100%;
+	text-align: center;
 }
 
 #abilities > div{
-	padding-left: 40px;
-	width: 25%;
-	border: 1px solid #222;
-	margin: 0;
-	font-size: 1.5em;
+	display: flex;
+	flex-flow: row;
+	width: 50%;
+	margin-top: 20px;
 }
 
 #abilities p{
-	margin-bottom:15px;
-	padding-left:15px;
 	font-weight: bold;
-	text-decoration: underline;
+	border-bottom: solid 2px #4B6A88;
+	font-size: 1.5em;
 }
 
-#abilities li{
-	margin-bottom: 30px;
+#abilities ul{
+	display: flex;
+	flex-flow: row;
+	width:90%;
+}
+
+#abilities li, .colorChange{
+	font-size: 1.1em;
+	color: #FD0D15;
+}
+
+#abilities li span{
+	color: #0000FF;
 }
 
 #abilities li:hover{
@@ -88,25 +94,17 @@ h1 {
 }
 
 .column{
-	margin:20px;
+	margin:10px;
 	display: flex;
 	flex-direction: column;
 }
 
 .column > *{
-	margin-bottom: 40px;
-}
-
-.display{
-	display: flex;
-	margin-top:20px;
+	margin-top: 20px;
 }
 
 .title{
 	font-weight: bold;
-}
-
-.number{
 }
 
 .active {
@@ -159,4 +157,23 @@ h1 {
 .dissapear {
   box-shadow: 0 0 50px white;
   filter: brightness(250%);
+}
+
+.overlay{
+	opacity: .95;
+	background:#40423d;
+	width:inherit;
+	height: 800px;
+	z-index: 3;
+	position: absolute;
+}
+
+button{
+	margin: 380px 0 0 325px;
+	height:50px;
+	width:100px;
+	opacity:1;
+	background: black;
+	color: #def;
+	border:2px solid #def;
 }

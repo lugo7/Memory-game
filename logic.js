@@ -7,11 +7,12 @@ let audio = [new Audio("./sounds/green.mp3"), new Audio("./sounds/red.mp3"), new
 
 //green = 0, red = 1, blue = 2, yellow = 3
 
-//press Enter key to begin game
-document.addEventListener('keydown', function(e){
-  if(e.keyCode === 13){
+//push start button to begin game
+document.getElementsByTagName('button')[0].addEventListener('click',function(){
+  document.getElementsByClassName("overlay")[0].style.display="none";
+  setTimeout(function(){
     newRound();
-  }
+  },1000);
 });
 
 //generate random number and push it to simonSequence
@@ -23,6 +24,7 @@ function newRound(){
   userSequence=[];
 };
 
+//add and remove neccessary classes
 function showSequence(sequence){
   switch (sequence){
     case 0:
